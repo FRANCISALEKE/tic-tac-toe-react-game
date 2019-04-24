@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 function Square(props) {
-  render() {
     return (
       <button
         className="square"
@@ -11,13 +10,13 @@ function Square(props) {
       </button>
     );
   }
-}
 
 class Board extends React.Component {
   constructor(props){
     super(props);
     this.state ={
       squares: Array(9).fill(null),
+      xIsNext:true,
     };
   }
 
